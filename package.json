@@ -6,7 +6,13 @@
   "scripts": {
     "test": "mocha --reporter spec"
   },
-  "keywords": ["mocha", "chai", "express", "request"],
+  "keywords": [
+    "mocha",
+    "chai",
+    "express",
+    "request",
+    "API"
+  ],
   "author": "Fatih kgokmen",
   "license": "ISC",
   "dependencies": {
@@ -14,5 +20,17 @@
     "express": "^4.17.1",
     "mocha": "^8.2.1",
     "request": "^2.88.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatihkgm/lab2_macha_test_101168654..git"
+  },
+  "bugs": {
+    "url": "https://github.com/fatihkgm/lab2_macha_test_101168654./issues"
+  },
+  "homepage": "https://github.com/fatihkgm/lab2_macha_test_101168654.#readme"
 }
