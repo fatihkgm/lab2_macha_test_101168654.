@@ -1,12 +1,9 @@
-var express = require('express')
-var app = express()
+var expect  = require('chai').expect;
+var request = require('request');
 
-//Define request response in root URL (/)
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
-
-//Launch listening server on port 8080
-app.listen(8080, function () {
-  console.log('http://localhost:8080/')
-})
+it('Main page content', function(done) {
+    request('http://localhost:8080' , function(error, response, body) {
+        expect(body).to.equal('Hello World');
+        done();
+    });
+});
