@@ -2,7 +2,7 @@ var utils = require("../app/utils");
 var assert = require("chai").assert;
 
 describe("pow", () => {
-    function makeTest(x) {
+    makeTest = (x) => {
         let expected = x * x * x;
 
         it(`${x} in the power 3 is ${expected}`, () => {
